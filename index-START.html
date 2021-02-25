@@ -62,6 +62,8 @@
     // selects audio elements and checks for the data attribute
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
     console.log(audio);
+    if(!audio) return; // stop the function from running
+    audio.play();
   });
 
 </script>
